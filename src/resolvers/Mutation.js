@@ -30,8 +30,16 @@ const Mutation = {
             throw new Error('Todo not found')
         }
 
-        if (typeof data.text === 'string') {
-            Todo.text = data.text
+        if (typeof data.title === 'string') {
+            Todo.title = data.title
+        }
+        if (typeof data.description === 'string') {
+            Todo.description = data.description
+        }
+        
+
+        if (typeof data.isDone === 'boolean') {
+            Todo.isDone = data.isDone
         }
 
         return Todo

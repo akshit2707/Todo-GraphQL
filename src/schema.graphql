@@ -12,7 +12,6 @@ type Mutation {
 
 
 input CreateTodoInput {
-    id:ID!
     title: String!
     description: String!
     isDone: Boolean!
