@@ -1,6 +1,6 @@
 const Query = {
     todos(parent, args, { db }, info) {
-        return db.todos
+        return db.Todos
     }
 }
 
